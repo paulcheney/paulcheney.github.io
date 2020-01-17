@@ -47,17 +47,20 @@ main {
 	div.repos {
 		display: flex;
 		flex-wrap: wrap;
+		padding-bottom: 1rem;
 		div {
 			background-color: rgba(255,255,255,0.8);
-			flex-basis: 50%;
-			border-radius: 10px;
+			flex-basis: 48%;
+			border-radius: 20px;
+			margin: 0 1%;
 			h3 {
 				margin: 0;
 				padding: .5rem 0;
+				font-size: 1.5rem;
 				background-color: $secondaryColor; 
 				text-align: center;
-				border-top-left-radius: 10px;
-				border-top-right-radius: 10px;
+				border-top-left-radius: 20px;
+				border-top-right-radius: 20px;
 			} // end h3
 			p {
 				padding: 1rem 2vw;
@@ -65,13 +68,26 @@ main {
 				color: $backgroundColor;
 				font-size: 1.2rem;
 			}
+			a.link {
+				display: block;
+				font-size: 1rem;
+				text-decoration: none;
+				margin: .8rem 2vw;
+				text-align: center;
+				padding: .6rem;
+				border-radius: 5px;
+				color: black;
+				background-color: $primaryColor;
+				transition: background .5s ease;
+			} // end link
+			a.link:hover{background-color: lighten($primaryColor, 15%);}
 		} // end one repo
 	} // end respos
 	
 	a {
 		color: $secondaryColor;
 	}
-}
+} // end main
 
 
 /*----------- FOOTER --------------*/
@@ -80,7 +96,11 @@ footer {
     
     padding: .5rem 2%;
     text-align: center;
-}
+	
+	a {
+		color: $fontColor;
+	}
+} // end footer
 
 
 

@@ -345,23 +345,39 @@ main {
     font-size: 2rem; }
   main div.repos {
     display: flex;
-    flex-wrap: wrap; }
+    flex-wrap: wrap;
+    padding-bottom: 1rem; }
     main div.repos div {
       background-color: rgba(255, 255, 255, 0.8);
-      flex-basis: 50%;
-      border-radius: 10px; }
+      flex-basis: 48%;
+      border-radius: 20px;
+      margin: 0 1%; }
       main div.repos div h3 {
         margin: 0;
         padding: .5rem 0;
+        font-size: 1.5rem;
         background-color: #3088E6;
         text-align: center;
-        border-top-left-radius: 10px;
-        border-top-right-radius: 10px; }
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px; }
       main div.repos div p {
         padding: 1rem 2vw;
         margin: 0;
         color: #2d2d2d;
         font-size: 1.2rem; }
+      main div.repos div a.link {
+        display: block;
+        font-size: 1rem;
+        text-decoration: none;
+        margin: .8rem 2vw;
+        text-align: center;
+        padding: .6rem;
+        border-radius: 5px;
+        color: black;
+        background-color: #e6a430;
+        transition: background .5s ease; }
+      main div.repos div a.link:hover {
+        background-color: #eec274; }
   main a {
     color: #3088E6; }
 
@@ -372,6 +388,8 @@ main {
 footer {
   padding: .5rem 2%;
   text-align: center; }
+  footer a {
+    color: #eee; }
 
 /*----- Clearfix: Force an Element not to collapse -----*/
 .clearfix:after {
