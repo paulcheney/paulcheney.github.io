@@ -8,61 +8,76 @@ html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
 /*----------- BODY --------------*/
 body {
     font-size: 16px;
-    font-family: Verdana, sans-serif;
+    font-family: $font;
+	color: $fontColor;
+	background-color: $backgroundColor; 
 }
 
 
 /*----------- HEADER --------------*/
+#headerWrapper{border-bottom: 1px solid $primaryColor;}
 header {
     padding: .5rem 2%;
-    background-color: #ddd;
+	
+	h1 {
+		margin: 0;
+		font-weight: $normalWeight;
+		font-size: 2.1rem;
+	}// end h1
+	h2 {
+		margin: 0; 
+		font-weight: $normalWeight;
+		font-size: 1.3rem;
+	} // end h2
 }
-header h1 {margin: 0;}
-header h2 {margin: 0; font-weight: normal;}
 
-/*----------- NAVIGATION --------------*/
-nav {
-    background-color: #666;
-}
-nav ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-}
-nav ul li {
-    float: left;
-    width: 25%;
-}
-nav ul li a {
-    display: block;
-    background-color: #444;
-    color: #eee;
-    border-left: 1px solid #777;
-    padding: .5rem 0;
-    text-decoration: none;
-    font-size: .9rem;
-    text-align: center;
-}
-nav ul li:first-child a {border-left: none;}
 
-nav ul li a:hover {
-    background-color: #eee;
-    color: #333;
-}
-nav ul li.active a {
-    background-color: #000;
-    color: #fff;
-}
+
 /*----------- MAIN --------------*/
+#mainWrapper {}
 main {
     padding: 0 2%;
     min-height: 10rem;
+	
+	h1 {
+		font-weight: $heavyWeight;
+		font-size: 2rem;
+	} // end h1
+	
+	div.repos {
+		display: flex;
+		flex-wrap: wrap;
+		div {
+			background-color: rgba(255,255,255,0.8);
+			flex-basis: 50%;
+			border-radius: 10px;
+			h3 {
+				margin: 0;
+				padding: .5rem 0;
+				background-color: $secondaryColor; 
+				text-align: center;
+				border-top-left-radius: 10px;
+				border-top-right-radius: 10px;
+			} // end h3
+			p {
+				padding: 1rem 2vw;
+				margin: 0;
+				color: $backgroundColor;
+				font-size: 1.2rem;
+			}
+		} // end one repo
+	} // end respos
+	
+	a {
+		color: $secondaryColor;
+	}
 }
 
 
 /*----------- FOOTER --------------*/
+#footerWrapper {background-color: $primaryColor;}
 footer {
-    background-color: #ddd;
+    
     padding: .5rem 2%;
     text-align: center;
 }
