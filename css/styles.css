@@ -351,7 +351,7 @@ main {
       background-color: rgba(255, 255, 255, 0.8);
       flex-basis: 98%;
       border-radius: 20px;
-      margin: 0 1%; }
+      margin: .5rem 1%; }
       main div.repos div h3 {
         margin: 0;
         padding: .5rem 0;
@@ -399,7 +399,7 @@ footer {
 
 @media only screen and (min-width: 35rem) {
   /*----------- BODY --------------*/
-  div.repos div {
+  main div.repos div {
     flex-basis: 48%; }
 
   /*----------- HEADER --------------*/
