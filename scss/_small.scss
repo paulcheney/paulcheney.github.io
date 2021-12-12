@@ -68,20 +68,21 @@ main {
 				color: $backgroundColor;
 				font-size: 1.2rem;
 			}
-			a.link {
+			a.link, a.link2 {
 				display: block;
 				font-size: 1.1rem;
 				text-decoration: none;
 				margin: .8rem 2vw;
 				text-align: center;
 				padding: .6rem;
-				border-radius: 7px;
+				border-radius: 10px;
 				color: black;
 				font-weight: $heavyWeight;
 				background-color: $primaryColor;
 				transition: background .5s ease;
 			} // end link
-			a.link:hover{background-color: lighten($primaryColor, 15%);}
+			a.link2{background-color:#df6b6b;}
+			a.link:hover, a.link2:hover{background-color: lighten($primaryColor, 15%);}
 		} // end one repo
 	} // end respos
 	

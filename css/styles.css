@@ -365,19 +365,21 @@ main {
         margin: 0;
         color: #2d2d2d;
         font-size: 1.2rem; }
-      main div.repos div a.link {
+      main div.repos div a.link, main div.repos div a.link2 {
         display: block;
         font-size: 1.1rem;
         text-decoration: none;
         margin: .8rem 2vw;
         text-align: center;
         padding: .6rem;
-        border-radius: 7px;
+        border-radius: 10px;
         color: black;
         font-weight: 700;
         background-color: #e6a430;
         transition: background .5s ease; }
-      main div.repos div a.link:hover {
+      main div.repos div a.link2 {
+        background-color: #df6b6b; }
+      main div.repos div a.link:hover, main div.repos div a.link2:hover {
         background-color: #eec274; }
   main a {
     color: #3088E6; }
