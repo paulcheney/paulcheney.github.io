@@ -63,20 +63,21 @@ main {
 				border-top-right-radius: 20px;
 			} // end h3
 			p {
-				padding: 1rem 2vw;
+				padding: .5rem 2vw 0 2vw;
 				margin: 0;
 				color: $backgroundColor;
 				font-size: 1.2rem;
 			}
 			a.link {
 				display: block;
-				font-size: 1rem;
+				font-size: 1.1rem;
 				text-decoration: none;
 				margin: .8rem 2vw;
 				text-align: center;
 				padding: .6rem;
-				border-radius: 5px;
+				border-radius: 7px;
 				color: black;
+				font-weight: $heavyWeight;
 				background-color: $primaryColor;
 				transition: background .5s ease;
 			} // end link

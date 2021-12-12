@@ -361,19 +361,20 @@ main {
         border-top-left-radius: 20px;
         border-top-right-radius: 20px; }
       main div.repos div p {
-        padding: 1rem 2vw;
+        padding: .5rem 2vw 0 2vw;
         margin: 0;
         color: #2d2d2d;
         font-size: 1.2rem; }
       main div.repos div a.link {
         display: block;
-        font-size: 1rem;
+        font-size: 1.1rem;
         text-decoration: none;
         margin: .8rem 2vw;
         text-align: center;
         padding: .6rem;
-        border-radius: 5px;
+        border-radius: 7px;
         color: black;
+        font-weight: 700;
         background-color: #e6a430;
         transition: background .5s ease; }
       main div.repos div a.link:hover {
